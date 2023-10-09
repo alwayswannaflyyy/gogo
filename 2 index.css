@@ -439,6 +439,9 @@
 
 .page3-body {
     width: 100%;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -446,12 +449,13 @@
     display: flex;
     align-items: center;
     font-size: 20px;
+    overflow: hidden;
 }
 
 .page3-image {
     display: flex;
     flex-direction: row;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     gap: 32px;
 }
 
@@ -459,9 +463,10 @@
     display: flex;
     /* flex-grow: 1;
     flex-basis: 0; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 50%;
     flex-direction: row;
+    position: relative;
 }
 
 .page3-image4 img {
@@ -478,34 +483,412 @@
     display: flex;
     width: 50%;
     gap: 32px;
-
-    border: 1px solid green;
+    /* 
+    border: 1px solid green; */
 
 }
 
 .page3-image3 img {
     width: 100%;
+
 }
 
 .page3-image5 {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    /* position: relative; */
 }
 
 .page3-image4 {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    /* position: relative; */
 }
 
 .image123 {
     flex-grow: 1;
     flex-basis: 0;
-    border: 1px solid red
+    /* border: 1px solid red */
+    position: relative;
+    overflow: hidden;
 }
 
 .image123 img {
     width: 100%;
     height: 100%
+}
+
+.mainshoes {
+    position: absolute;
+    bottom: 0;
+    padding: 32px;
+    color: white;
+    /* display: flex; */
+    gap: 22px;
+    flex-direction: column;
+    display: inline-block;
+
+
+
+}
+
+.mainshoes:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #888;
+    overflow: hidden;
+
+
+}
+
+.shoes {
+    background-color: #407ce8;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.shoes2 {}
+
+.shoes3 {
+    border-top: 1px solid hsla(0, 0%, 100%, .15);
+}
+
+.smallshoes {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+}
+
+.smallshoes1 {
+    background-color: #407ce8;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.page4container {
+    display: flex;
+    gap: 32px;
+}
+
+.page4body {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.page4title {
+    display: flex;
+    flex-direction: row;
+}
+
+.page4title p {
+    font-size: 18px;
+}
+
+.gogoslide {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 0;
+    gap: 20px;
+
+
+}
+
+.gogostyle {
+    border: #efefef 1px solid;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    margin: 0;
+
+
+
+
+
+}
+
+.styleimg {
+    overflow: hidden;
+
+}
+
+.styleimg img {
+    width: 100%;
+    /* overflow: hidden; */
+    display: block;
+
+
+
+}
+
+.stylecontain {
+    padding: 20px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.styleicons {
+    border-top: 1px solid grey;
+    color: grey;
+}
+
+.styleimg {
+    position: relative;
+}
+
+.stylehover {
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.styleimg:hover .styleimg1 {
+    opacity: 0.3;
+    transform: scale(1.2);
+
+}
+
+.styleimg:hover .gogostyle {
+    background-color: #efefef;
+}
+
+.styleimg:hover .stylehover {
+    opacity: 1;
+}
+
+/* .styleimg .styleimg1{
+    scale: 1.1;
+} */
+
+.page5body {}
+
+.page5title {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+
+}
+
+.page5cotitile {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.page5cotitle:hover p {
+    color: #00adee;
+
+}
+
+.styleimg img {}
+
+.stylecontain:hover {
+    background-color: #efefef;
+}
+
+.page6body {}
+
+.page6container {}
+
+.page6title {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.page6comic {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.comicsec img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.comicsec {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: column;
+}
+
+.comicimg {
+    position: relative;
+}
+
+.img .comicstyle {
+    width: 100%;
+}
+
+.comicstyle {
+    border: 1px solid #efefef;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.comicimg {
+    overflow: hidden;
+}
+
+.comicicon {
+    border-top: 1px solid #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: grey;
+}
+
+.comichover {
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.comicimg:hover .comic2 {
+    opacity: 0.3;
+    transform: scale(1.2);
+}
+
+.comicimg:hover .comichover {
+    opacity: 1;
+}
+
+.comicstyle:hover {
+    background-color: #efefef;
+}
+
+.comicimg .img {
+    height: 100%;
+}
+
+.page6title:hover {
+    color: #407ce8;
+
+}
+
+.page7body {
+    background-color: #1a1a1a;
+
+}
+
+.page7container {}
+
+.page7title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.page7title p {
+    color: white;
+    font-size: 20px;
+}
+
+.page7title:hover {
+    color: #0f6ecd;
+}
+
+.page7image img {
+    border-radius: 5px;
+}
+
+.page7image {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.page7hover {
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+}
+
+.page7image:hover .page7pic {
+    opacity: 0.3;
+    transform: scale(1.2);
+
+}
+
+.page7image:hover .page7hover {
+    opacity: 1;
+}
+
+.page7image:hover p {
+    color: white;
+}
+
+.page7slide {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-bottom: 32px;
+}
+.page7news{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+
+.page7news img {
+    width: 100%;
+}
+
+.page7txt {
+    color: hsla(0, 0%, 100%, .8);
+    gap: 10px;
+}
+.page7container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
