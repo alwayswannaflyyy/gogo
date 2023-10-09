@@ -1047,8 +1047,60 @@ height: 100%;
     }
     
 }
-@media only screen and (max-width: 992px) {
-    .page2{
+@media only screen and (max-width: 1180px) {
+    .wholething{
+        width: 100%;
+    }
+    .slide{
         display: none;
     }
+    .side{
+        display: none;
+    }
+    .sideline{
+        width: 100%;
+        background-color: transparent;
+        
+    }
+    .page3-container{
+        display: none;
+    }
+    .page4body{
+        display: none;
+    }
+    .page5body{
+        display: none;
+    }
+    .page6body{
+        display: none;
+    }
+    .page7body{display: none;}
+    .side-news{
+        display: none;
+    }
+    .selections{
+        display: none;
+    }
+    .section11 p{
+        display: none;
+
+    }
+    .section11 .searchcon{
+        display: none;
+    }
+    .uk3{
+        display: none;
+    }
+    .sideline-news{
+        background-color: white;
+        border-left: none;
+    }
+    .sideline-title{
+        background-color: white;
+    }
+    .sidecontainer{
+        border: none;
+    }
+  
+
 }
