@@ -39,6 +39,7 @@
     flex-grow: 1;
     flex-basis: 0;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -46,7 +47,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s linear;
+
     overflow: hidden;
 
 }
@@ -323,7 +324,7 @@
 }
 
 .sidecontainer {
-    background-color: rgb(219, 145, 85);
+    background-color: rgb(244, 209, 162);
     margin-top: 32px;
 
 }
@@ -343,6 +344,9 @@
     text-align: center;
     padding-top: 21px;
 
+}
+.sideline-news{
+    padding: 32px;
 }
 
 .sideline-news a {
@@ -467,6 +471,7 @@
     width: 50%;
     flex-direction: row;
     position: relative;
+    overflow: hidden;
 }
 
 .page3-image4 img {
@@ -490,9 +495,16 @@
 
 .page3-image3 img {
     width: 100%;
+    border-radius: 5px;
+   
 
 }
-
+.page3-image3:hover img{
+    transform: scale(1.1);
+}
+.page3-image3:hover .mainshoes{
+    opacity: 1;
+}
 .page3-image5 {
     display: flex;
     flex-direction: column;
@@ -513,11 +525,13 @@
     /* border: 1px solid red */
     position: relative;
     overflow: hidden;
+
 }
 
 .image123 img {
     width: 100%;
-    height: 100%
+    height: 100%;
+    border-radius: 5px;
 }
 
 .mainshoes {
@@ -525,8 +539,7 @@
     bottom: 0;
     padding: 32px;
     color: white;
-    /* display: flex; */
-    gap: 22px;
+    
     flex-direction: column;
     display: inline-block;
 
@@ -534,11 +547,16 @@
 
 }
 
+.ssss{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
 .mainshoes:hover {
     opacity: 1;
-    transform: scale(1.1);
-    color: #888;
-    overflow: hidden;
+ 
+  
 
 
 }
@@ -586,6 +604,10 @@
     display: flex;
     flex-direction: row;
 }
+.image123:hover img{
+    transform: scale(1.1);
+    border-radius: 5px;
+}
 
 .page4title p {
     font-size: 18px;
@@ -604,7 +626,6 @@
 .gogostyle {
     border: #efefef 1px solid;
     border-radius: 5px;
-    /* overflow: hidden; */
     margin: 0;
 
 
@@ -619,12 +640,8 @@
 }
 
 .styleimg img {
-    width: 100%;
-    /* overflow: hidden; */
+    width: 100%;    
     display: block;
-
-
-
 }
 
 .stylecontain {
@@ -661,10 +678,14 @@
 
 }
 
-.styleimg:hover .gogostyle {
+.styleimg:hover .stylecontain {
     background-color: #efefef;
 }
-
+/* .gogostyle:hover> div{
+    transform: scale(1.2);
+    background-color: #efefef;
+    opacity: 0.3;
+} */
 .styleimg:hover .stylehover {
     opacity: 1;
 }
@@ -721,13 +742,17 @@
     width: 100%;
     gap: 20px;
 }
-
+.comicimg .comic2{
+   height: 100%;
+   width: 100%;
+    
+}
 .comicsec img {
     width: 100%;
-    height: 100%;
-
+height: 100%;
 
 }
+
 
 .comicsec {
     display: flex;
@@ -741,7 +766,8 @@
 }
 
 .img .comicstyle {
-    width: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 .comicstyle {
@@ -818,10 +844,10 @@
 .page7title p {
     color: white;
     font-size: 20px;
-}
 
-.page7title:hover {
-    color: #0f6ecd;
+}
+.page7title:hover p{
+    color: #0050a4;
 }
 
 .page7image img {
@@ -831,6 +857,7 @@
 .page7image {
     position: relative;
     overflow: hidden;
+   
 
 }
 
@@ -841,8 +868,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
-
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -853,6 +878,11 @@
     opacity: 0.3;
     transform: scale(1.2);
 
+
+}
+.page7icons{
+    display: flex;
+    gap: 10px;
 }
 
 .page7image:hover .page7hover {
@@ -885,10 +915,140 @@
 
 .page7txt {
     color: hsla(0, 0%, 100%, .8);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 .page7container{
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+.footer{
+
+}
+.footercontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footerlogo{
+
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.footer3{
+    display: flex;
+    align-items: center ;
+    gap: 10px;
+}
+.footer3 img{
+    width: 15px;
+    height: 20px;
+}
+.footer4{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    gap: 10px; 
+  
+}
+.footer4 img {
+    width: 15px;
+    height: 20px;
+}
+.mainfooter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.footer3:hover{
+    color: #0050a4;
+}
+.footer4:hover{
+    color: #0050a4;
+}
+.advie{
+    font-size: 13px !important;
+}
+.footerborder{
+   border-top: 1px solid #888;
+   padding-top: 30px;
+   display: flex;
+   justify-content: space-between;
+}
+.footerlinks{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footerlinks a{
+    color: #888;
+   
+   
+}
+.footerlink:hover{
+    color: black;
+}
+.body .page7body{
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+
+
+
+
+
+@media only screen and(max-width: 600px){
+    .GOGOapp{
+        width: auto;
+
+    }
+    .section1{
+        display: none;
+    }
+    .calendarcontain{
+        display: none;
+        
+    }
+    .forecast{
+        border: 1px solid #888;
+    }
+    .header{
+        
+    }
+    .slide1{
+        display: flex;
+        flex-direction: column;
+    }
+    .slide-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .footercontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerborder{
+        display: flex;
+        flex-direction: column;
+    }
+    .page7slide{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    .page2{
+        display: none;
+    }
 }
